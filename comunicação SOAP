@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.example.com/customerWebService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getCustomerInfo>
+         <ws:customerId>12345</ws:customerId>
+      </ws:getCustomerInfo>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <ns1:AuthenticationHeader xmlns:ns1="http://example.com/">
+      <ns1:username>usuario</ns1:username>
+      <ns1:password>senha</ns1:password>
+    </ns1:AuthenticationHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns2:Cliente xmlns:ns2="http://example.com/">
+      <ns2:nome>João da Silva</ns2:nome>
+      <ns2:endereco>Rua das Flores, 123</ns2:endereco>
+      <ns2:telefone>(11) 5555-5555</ns2:telefone>
+    </ns2:Cliente>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+
